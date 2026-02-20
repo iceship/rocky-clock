@@ -6,14 +6,18 @@
 
     <div class="flex flex-col md:flex-row gap-8 w-full max-w-4xl px-6">
       <div class="flex-1 bg-neutral-900 border border-neutral-800 rounded-2xl p-8 flex flex-col items-center shadow-xl">
-        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-4">Earth Time</h2>
+        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-4">
+          Earth Time
+        </h2>
         <div class="text-4xl md:text-5xl font-mono text-white">
           {{ earthTime }}
         </div>
       </div>
 
       <div class="flex-1 bg-neutral-900 border border-cyan-900/50 rounded-2xl p-8 flex flex-col items-center shadow-[0_0_30px_rgba(8,145,178,0.15)]">
-        <h2 class="text-sm uppercase tracking-widest text-cyan-500 mb-4">Eridian Time (Base-6)</h2>
+        <h2 class="text-sm uppercase tracking-widest text-cyan-500 mb-4">
+          Eridian Time (Base-6)
+        </h2>
         <div class="text-5xl md:text-6xl font-bold text-cyan-300 tracking-[0.2em]">
           {{ eridianTime }}
         </div>
@@ -34,12 +38,12 @@ let timer = null
 
 // Map base-6 digits to Eridian symbols
 const symbols = {
-  '0': 'ℓ',
-  '1': 'I',
-  '2': 'V',
-  '3': 'λ',
-  '4': '+',
-  '5': '∀'
+  0: 'ℓ',
+  1: 'I',
+  2: 'V',
+  3: 'λ',
+  4: '+',
+  5: '∀',
 }
 
 // Function to calculate and update both Earth and Eridian times
